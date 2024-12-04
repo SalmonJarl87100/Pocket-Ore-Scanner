@@ -36,19 +36,21 @@ end
 fs.makeDir("/ArScanner")
 
 -- download main file
-shell.run("pastebin get iMTk6gp6 /ArScanner/main.lua")
+shell.run("wget https://raw.githubusercontent.com/SalmonJarl87100/Pocket-Ore-Scanner/refs/heads/main/main.lua /ArScanner/main.lua")
 
 -- download basalt file
-shell.run("pastebin get C92QBYXM /ArScanner/basalt.lua")
+shell.run("wget https://raw.githubusercontent.com/SalmonJarl87100/Pocket-Ore-Scanner/refs/heads/main/basalt.lua /ArScanner/basalt.lua")
 
 -- download scanner program
-shell.run("pastebin get KpTpq0Jt /ArScanner/scanner.lua")
+shell.run("wget https://raw.githubusercontent.com/SalmonJarl87100/Pocket-Ore-Scanner/refs/heads/main/scanner.lua /ArScanner/scanner.lua")
 
 -- download shortcut file
-shell.run("pastebin get mTVh8NqF /arScanner.lua")
+shell.run("wget https://raw.githubusercontent.com/SalmonJarl87100/Pocket-Ore-Scanner/refs/heads/main/arScanner.lua /arScanner.lua")
 
 -- dowload pine3d
 shell.run("pastebin run qpJYiYs2")
 shell.run("copy Pine3D.lua ArScanner/")
 shell.run("copy betterblittle.lua ArScanner/")
 shell.run("delete Pine3D.lua betterblittle.lua Mountains.lua noise.lua")
+
+print("Installation complete. Thank you for choosing my program.")
