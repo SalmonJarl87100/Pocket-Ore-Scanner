@@ -1,4 +1,4 @@
 -- change this if needed to the directory that contains the main program
-local fileLocation = "/3dAr"
+local fileLocation = "/ArScanner"
 
 shell.run(fileLocation .. "/main.lua", fileLocation)
