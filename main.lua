@@ -27,6 +27,12 @@ local function equipScanner()
     -- attempt to wrap scanner
     geoScanner = peripheral.wrap("back")
 
+    -- equip a peripheral if none exists
+    if not geoScanner then
+        pocket.equipBack()
+        geoScanner = peripheral.wrap("back")
+    end
+
     -- loop through peripherals until geo scanner is found
     while peripheral.getMethods("back")[3] ~= "cost" do
         -- equip new peripheral
