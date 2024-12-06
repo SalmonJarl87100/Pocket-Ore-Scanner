@@ -151,11 +151,11 @@ function equipPlayerDetector()
   -- attempt to wrap player detector
   playerDetector = peripheral.wrap("back")
 
-  -- equip a peripheral if none exists
-  if not playerDetector then
-    pocket.equipBack()
-    playerDetector = peripheral.wrap("back")
-  end
+    -- equip a peripheral if none exists
+    if not playerDetector then
+      pocket.equipBack()
+      playerDetector = peripheral.wrap("back")
+    end
 
   while peripheral.getMethods("back")[3] ~= "getOnlinePlayers" do
     -- equip new peripheral
