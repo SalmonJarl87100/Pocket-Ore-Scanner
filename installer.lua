@@ -51,6 +51,6 @@ shell.run("wget https://raw.githubusercontent.com/SalmonJarl87100/Pocket-Ore-Sca
 shell.run("pastebin run qpJYiYs2")
 shell.run("copy Pine3D.lua ArScanner/")
 shell.run("copy betterblittle.lua ArScanner/")
-shell.run("delete Pine3D.lua betterblittle.lua Mountains.lua noise.lua")
+shell.run("delete Pine3D.lua betterblittle.lua Mountains.lua noise.lua models")
 
 print("Installation complete. Thank you for choosing my program.")
