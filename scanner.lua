@@ -152,7 +152,6 @@ function equipPlayerDetector()
   playerDetector = peripheral.wrap("back")
 
   while peripheral.getMethods("back")[3] ~= "getOnlinePlayers" do
-    print("G")
     -- equip new peripheral
     pocket.equipBack()
     -- attempt to wrap geoscanner
